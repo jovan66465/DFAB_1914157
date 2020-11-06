@@ -1,0 +1,89 @@
+<!DOCTYPE html>	
+<html>
+
+	<head>
+		<title>My website</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		<div id="container" width="800">
+
+			<div id="header">
+			<h1>Welcome to my website!</h1>
+			</div>
+    
+            <div id="content">
+                <div id="nav">
+				<h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+						<li><a href="tools.html">Tools</a></li>
+                        <li><a href="01-fblbsfty.html">FabLab Safety</a></li>
+                        <li><a href="02-webdev.html">Web development</a></li>
+                        <li><a href="03-cad.html">Computer Aided Design</a></li>
+                        <li><a class="selected" href="">3D Printing</aa></li>
+                        <li><a href="05-lsrcutting.html">Laser Cutting</a></li>
+
+
+                    </ul>
+                </div>
+
+				<div id="main">
+				    <h2>3D Printing</h2>
+                    
+                        <h3>
+                        Printer calibration:
+                        </h3>
+                        Before printing on a new printer/ extruder, a few things have to be done to ensure that prints come out decently.
+                    
+                        <ul>
+                        <li>
+                            Firstly, the bed needs to be leveled to ensure that the nozzle is able to place down a perfect first layer of plastic. Although some higher end printers may have an automatic bed leveling system like the BLtouch, both the school printer (makerbot replicator v2) and my printer (ender 3) do not come equipped with these.
+                        </li>
+                            
+                        <li>
+                            Secondly, the extruder needs to be calibrated to ensure that the correct amount of material is extruded through the nozzle. Personally i think this is one of the most important steps as it can determine if your print comes out as a solid piece or ends up in a stringy mess.
+                        </li>
+                            
+                        </ul>
+                    
+                        <p>
+                            <iframe width="420" height="315"
+                            src="https://www.youtube.com/watch?v=rp3r921DBGI&feature=emb_logo">
+                            </iframe> 
+                        </p>    
+                    
+                        <h3>
+                        Printing normal PLA:
+                        </h3>
+                        <p>
+                        
+                        </p>
+            
+                        <h3>Printing TPU: </h3>
+                        <p>
+                            What i learned from my own research and experience is that TPU has to be printed slow (around 20mm/s). It also has to be printed hotter than typical PLA and extrusion multiplier should be increased to around 145%
+                        </p>
+                    
+                        <p>
+                            This is because TPU is much more flexible than PLA and is prone to clogging. This issue is especially prevalent in bowden style printers, where the extruder motor is far away from the hotend, meaning that it is more likely that the filament can jam up inside the tube or extruder assembly if either the printing speed is too high, or retraction is enabled.
+                        </p>
+                    
+                        <p>
+                            TPU also has the tendancy to have poor horizontal layer adhesion if the temperature is not tuned correctly. In order to rectify this, every new spool of filament has to be tuned using one of those heat towers found on thingiverse.
+                        </p>
+                    
+                    
+				    </div>
+				<div id="footer">
+				Copyright &copy; Jovan Peh
+				</div>
+			</div>
+                
+        </div>
+
+	</body>
+
+</html>
