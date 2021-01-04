@@ -44,7 +44,7 @@
                         </li>
                             
                         <li>
-                            Secondly, the extruder needs to be calibrated to ensure that the correct amount of material is extruded through the nozzle. Personally i think this is one of the most important steps as it can determine if your print comes out as a solid piece or ends up in a stringy mess.
+                            Secondly, the extruder needs to be calibrated to ensure that the correct amount of material is extruded through the nozzle. This can be one of the most important steps as most aspects of printing rely on the correct amount of plastic being extruded. As such, it can determine if your print looks like intended.
                         </li>
                             
                         </ul>
@@ -56,19 +56,70 @@
                         </p>    
                     
                         <h3>
-                        Printing regular PLA:
+                            Slicer settings:
                         </h3>
                     
-                        <p>As we can see, the high print speed caused the overhangs on the ball to fail partially, resulting in a gap of a few layers in the skin.</p>
+                        <p>
+                            Layer height:
+                            This determines how thick each layer is. The thicker the layer height, the faster the print is completed, however, it can leave unsightly artifacts on the surface of the print.
+                        </p>
+                            
+                        <p>
+                            <img src="" alt="PIC SHOWING LAYER LINES" width="250">
+                        </p>
+                    
+                        <p>
+                            Infill percentage:
+                        </p>
+                        
+                        <p>
+                            This parameter determines how dense the inside (infill) of the model will be. The higher the infill, the stronger and heavier the print. On the other hand, a higher infill percentage will result in a longer print time and higher filament usage. Thus, a low percentage (15%) is usually used for most prints that don't need the added strength.
+                        </p>
+                    
+                        <p>
+                            <img src="" alt="PIC SHOWING infill percentage" width="250">
+                        </p>
+                        
+                        <p>
+                            It is worth noting that vase mode (spiralise contour) can reduce print time even more in situations where infill is not required. This mode is can also be used to calibrate line width for a printer.
+                        </p>
+                    
+                        <p>
+                            <img src="" alt="PIC SHOWING vase mode" width="250">
+                        </p>
+                    
+                        <p>
+                        Supports: (info about overhangs and tree and normal supports)
+                        </p>
+                    
+                        <p>
+                        Bed adhesion: (info about rafts, brim, skirt)
+                        </p>
+                    
+                        
+                    
+                        <h3>
+                        Printing PLA:
+                        </h3>
+                    
+                        <p>Below: printing on the school printer</p>
+                        <p><img src="pics/3dprint2.jpg" alt="placeholder" width="250"></p>
+                    
+                        <p>As we can see, the high print speed caused the overhangs on the ball to fail partially, resulting in a gap of a few layers in the skin. I think this was the result of underextrusion from the lack of tuning (This was the default cura profile for the ultimaker</p>
                         <p><img src="pics/3dprint4.jpg" alt="placeholder" width="250"></p>
+                    
+                        <p>I also chose to use a raft since it pops off in once as compared to brims, which require a knife to remove cleanly</p>
                         <p><img src="pics/3dprint3.jpg" alt="placeholder" width="250"></p>
-                        <p><img src="pics/10.png" alt="placeholder" width="250"></p>
-                        <p><img src="pics/10.png" alt="placeholder" width="250"></p>
-                        <p><img src="pics/10.png" alt="placeholder" width="250"></p>
+                    
+                        <p>This is a pawn piece printed on my personal printer. Tuning in the print temperature allowed me to print with minimal stringing</p>
+                        <p><img src="pics/3dprint5.jpg" alt="placeholder" width="250"></p>
+                    
+                        <p>After removing the supports,</p>
+                        <p><img src="pics/3dprint6.jpg" alt="placeholder" width="250"></p>
             
                         <h3>Printing TPU: </h3>
                         <p>
-                            What i learned from my own research and experience is that TPU has to be printed slow (around 20mm/s). It also has to be printed hotter than typical PLA and extrusion multiplier should be increased to around 145%
+                            What i learned from research and abit of experience is that TPU, at least on my setup, has to be printed slow (around 20mm/s), otherwise the flexible filament may come out of the extruder assembly and cause a print failure. It also has to be printed hotter than typical PLA and extrusion multiplier should be increased to around 145% to compensate for the underextrusion.
                         </p>
                     
                         <p>
@@ -76,7 +127,7 @@
                         </p>
                     
                         <p>
-                            TPU also has the tendancy to have poor horizontal layer adhesion if the temperature is not tuned correctly. In order to rectify this, every new spool of filament has to be tuned using one of those heat towers found on thingiverse.
+                            During experimention with this material, i found out that TPU tends to have poor horizontal layer adhesion if the temperature is not tuned correctly. However if printing temperature is too high, stringing will become a huge issue since TPU strings are much harder to clean up than PLA strings, which snap off when pulled
                         </p>
                     
                     
