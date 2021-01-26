@@ -19,12 +19,12 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-						<li><a href="tools.html">Tools</a></li>
                         <li><a href="01-fblbsfty.html">FabLab Safety</a></li>
                         <li><a href="02-webdev.html">Web development</a></li>
                         <li><a href="03-cad.html">Computer Aided Design</a></li>
                         <li><a class="selected" href="">3D Printing</aa></li>
                         <li><a href="05-lsrcutting.html">Laser Cutting</a></li>
+                        <li><a href="06-embeddedprog.html">Embedded programming (Arduino)</a></li>
 
 
                     </ul>
@@ -68,18 +68,26 @@
                         
                         <p>
                             This parameter determines how dense the inside (infill) of the model will be. The higher the infill, the stronger and heavier the print. On the other hand, a higher infill percentage will result in a longer print time and higher filament usage. Thus, a low percentage (15%) is usually used for most prints that don't need the added strength.
+                            <br>
+                            By using the per model function in cura, i varied the infill percentage for these 4 cylinders. I got an open top by setting top layers to zero.
+                            
+                            <img src="pics/infilldemo0.PNG" alt="cura0" width="250">
+                            <img src="pics/infilldemo1.PNG" alt="cura1" width="250">
+                            <img src="pics/infilldemo3.jpeg" alt="cura3" width="250">
+                            <img src="pics/infilldemo4.jpeg" alt="cura4" width="250">
+                            <img src="pics/ender3.gif" alt="cura5" width="250">
+
+
+
+                        
+                            
                         </p>
                     
-                        <p>
-                            <img src="" alt="PIC SHOWING infill percentage" width="250">
-                        </p>
-                        
                         <p>
                             It is worth noting that vase mode (spiralise outer contour) can reduce print time even more in situations where infill is not required. This mode is can also be used to calibrate line width for a printer by printing a completely hollow cube.
-                        </p>
-                    
-                        <p>
-                            <img src="" alt="PIC SHOWING vase mode" width="250">
+                            
+                            <img src="pics/vasemode.jpeg" alt="PIC SHOWING vase mode" width="250">
+
                         </p>
                     
                         <p>
@@ -89,20 +97,24 @@
                         <p>
                             A FDM system lays down plastic layer by layer to produce an object. This means that printers need support structure to print steep overhangs, typically more than 45 degrees, since printing over thin air can lead to unsightly sagging strands.
                         </p>
+                    
                         <p>
-                        Bed adhesion: (info about rafts, brim, skirt)
+                            Bed adhesion: (info about rafts, brim, skirt)
                         </p>
                     
                         
                     
                         <h3>
-                        Printing PLA:
+                            Printing PLA:
                         </h3>
                     
                         <p>Below: printing on the school printer</p>
                         <p><img src="pics/3dprint2.jpg" alt="placeholder" width="250"></p>
                     
-                        <p>As we can see, the high print speed caused the overhangs on the ball to fail partially, resulting in a gap of a few layers in the skin. I think this was the result of underextrusion from the lack of tuning (This was the default cura profile for the ultimaker</p>
+                        <p>
+                            As we can see, the high print speed caused the overhangs on the ball to fail partially, resulting in a gap of a few layers in the skin. I think this was the result of underextrusion from the lack of tuning (This was the default cura profile for the ultimaker
+                        </p>
+                    
                         <p><img src="pics/3dprint4.jpg" alt="placeholder" width="250"></p>
                     
                         <p>I also chose to use a raft since it pops off in once as compared to brims, which require a knife to remove cleanly</p>
