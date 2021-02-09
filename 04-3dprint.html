@@ -25,6 +25,7 @@
                         <li><a class="selected" href="">3D Printing</aa></li>
                         <li><a href="05-lsrcutting.html">Laser Cutting</a></li>
                         <li><a href="06-embeddedprog.html">Embedded programming (Arduino)</a></li>
+                        <li><a href="07-finalproject.html">Final DFAB project</a></li>
 
 
                     </ul>
@@ -95,7 +96,13 @@
                         </p>
                     
                         <p>
-                            A FDM system lays down plastic layer by layer to produce an object. This means that printers need support structure to print steep overhangs, typically more than 45 degrees, since printing over thin air can lead to unsightly sagging strands.
+                            A FDM system lays down plastic layer by layer to produce an object. This means that printers need support structure to print steep overhangs, typically more than 45 degrees, since printing over thin air can lead to unsightly sagging strands.<br>
+                            This is different from bridging, where the plastic is 'stretched over a distance' rather than printing in mid air. As such, it is supported on both ends unlike overhangs.<br>
+                            So, how do we improve the overhang performance of a printer?
+                            <ul>
+                                <li>Firstly, we can make the plastic cool faster by either increasing cooling or using a thinner layer height. Since there is less plastic to cool down, the plastic cools faster and exhibits less sag.</li>
+                                <li>Secondly, we can use a lower printing speed to allow more time for the extruded plastic to be cooled from the part cooling fan. There is also a setting from Cura 4.8 that allows for the printer to wait for a certain time before proceeding to the next layer. This may be useful for certain materials like TPU that tend to remain pliable for longer.</li>
+                            </ul>
                         </p>
                     
                         <p>

@@ -23,6 +23,21 @@ h1,h2,h3
 	padding: 0;
 }
 
+#backgrounddemo
+{
+    background-color: aquamarine;
+}
+
+#textcolourdemo
+{
+    color: dodgerblue;
+}
+
+#removelistdotsdemo ul
+{
+    list-style-type: none;
+}
+
 #container
 {
 	background-color: white;

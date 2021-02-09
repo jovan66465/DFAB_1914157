@@ -1,0 +1,110 @@
+<!DOCTYPE html>	
+<html>
+
+	<head>
+		<title>My website</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		<div id="container" width="800">
+
+			<div id="header">
+			<h1>Welcome to my website!</h1>
+			</div>
+    
+            <div id="content">
+                <div id="nav">
+				<h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="01-fblbsfty.html">FabLab Safety</a></li>
+                        <li><a href="02-webdev.html">Web development</a></li>
+                        <li><a href="03-cad.html">Computer Aided Design</a></li>
+                        <li><a href="04-3dprint.html">3D Printing</aa></li>
+                        <li><a href="05-lsrcutting.html">Laser Cutting</a></li>
+                        <li><a href="06-embeddedprog.html">Embedded programming (Arduino)</a></li>
+                        <li><a class="selected" href="">Final DFAB project</a></li>
+
+
+                    </ul>
+                </div>
+
+				<div id="main">
+				<h2> Home Page</h2>
+                
+				
+				<p>
+                    FINAL PROJECT PAGE
+                </p>
+					
+				<p>
+					Project idea: 	
+				</p>
+                    
+                <p>
+                    <h2>Choice of microcontroller system</h2>
+					I will be using the ESP8266 NodeMCU Wi-Fi Dev Board.
+                    In order to allow remote access to the light switch, i have decided to use the wifi arduino. Since i already have a few of these development boards on hand, i feel like it would be a great fit to use in my project. Its small form factor also meant that i can tuck the board under the lightswitch, allowing for a much more compact and portable form factor.
+                </p>
+                
+                <p>
+                    <h2>3D Fabrication</h2>
+                    I started my design by first making a tight fitting bracket for my light switch. 
+                    After this, i used a pair of calipers and my servo to design a mount. After a few series of sketches, extrudes and fillets, i came up with this model.
+				</p>
+			
+				<p>
+					<iframe src="https://myhub.autodesk360.com/ue2c04282/shares/public/SH56a43QTfd62c1cd968b4b35262a927c1e6?mode=embed" width="450" height="450" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+				</p>
+				
+				<p>
+					After exporting the model as an STL, i put the files inside Cura and prepared it for printing. Printing it at 0.28mm layer height, it took about 6 hours to complete.
+				</p>
+					
+				<p>
+					<img src="pics/curaprint.png" alt="cura preview (4hr 20min)" width="450">
+				</p>
+			
+				<p>
+					<br>
+					Fortunately, my servos and dev board fit snug-ly and i did not have to compensate for expansion.
+					<br>
+					I then depinned my nodeMCU in order to make space for the wiring harness and servo cable (the jumper wires would not allow the entire mounting system to sit flush with the wall).
+					<br>
+					However, i once i connected the servo directly to the dev board, it was not able to move. After probing around with a multimeter, i found out that the onboard regulator was only designed for small signal devices and not high current devices like servomotors.
+					<br>
+					This is why i had to add an external buck regulator to step down the 7.4V, 2 cell LiPo power into a more suitable 6V for the servo and microcontroller.
+					<br>
+					This is the buck converter i will be using to power my project.
+					<br>
+					<img src="pics/mini360buck.jpg" alt="the power supply module i will be using" width="450">
+					<br>
+					So, why did i choose 6V instead of 5V?
+					(explain more on more torque and higher speed for higher voltage)
+					Since most servos are capable of 6V power and the microcontroller is 10V tolarant, i have decided to go with 6V bus voltage.
+					<br>
+					However, running my servo on 6 volts also means that more current is drawn. For example, at 5VDC, the Futaba S3003 servo draws only 7.2mA while on 6V, it draws 8mA (unloaded).
+					<img src="pics/futabaservospecs.png" alt="the futaba s3003 servomotor specifications" width="450">
+					<br>
+					This is my final prototype, which uses a nodeMCU v3, full size futaba servo, mini buck converter(switching power supply) together with a lithium battery, and a few hunderd grams of printed and cut plastic (PLA, Acrylic).
+					<img src="pics/final1.jpg" alt="the final product" width="250">
+					<img src="pics/final2.jpg" alt="the final product" width="250">
+					<img src="pics/final3.jpg" alt="the final product" width="500">
+                </p>
+                    
+                
+                    
+				</div>
+				<div id="footer">
+				Copyright &copy; Jovan Peh
+				</div>
+		
+			</div>
+                
+        </div>
+
+	</body>
+
+</html>
