@@ -68,6 +68,11 @@ h1,h2,h3
 	font-weight: bold;
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 #main
 {
 	width: 600px;
